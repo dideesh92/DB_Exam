@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6">Library Management system</h1>
+        <form id="patient" action="/submit" method="POST">
+            <div class="mb-4">
+                <label for="bookId" class="block text-gray-700">BookId</label>
+                <input type="text" id="bookId" name="bookId" class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="borrower" class="block text-gray-700">Name of the borrower</label>
+                <input type="text" id="borrower" name="borrower" class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="title" class="block text-gray-700">Name of the book</label>
+                <input type="text" id="title" name="title" class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="dueDate" class="block text-gray-700">  Due date for submission:</label>
+                <input type="text" id="dueDate" name="dueDate" class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <div class="mb-4">
+                <label for="status" class="block text-gray-700">status</label>
+                <input type="text" id="status" name="status" class="w-full border-2 border-gray-300 p-2 rounded mt-2" required>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+    </div>
+</body>
+
+</html>
